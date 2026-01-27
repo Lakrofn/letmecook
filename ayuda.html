@@ -22,7 +22,91 @@
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
         </nav>
     </header>
+    <!-- Título principal de la página -->
+    <h1>Contacto</h1>
 
+    <!-- Sección de contacto: ayuda, reclamaciones y propuestas -->
+    <h2>Ayuda, Reclamaciones y Propuestas</h2>
+    
+    <!--Encabezado-->
+
+    <section>
+        <div><h3>Contacto y ayuda</h3>
+        <p>Estamos a la disposición del cliente. Contactanos para cualquier consulta o sugerencia</p></div>
+    </section>
+
+            <br>
+    <!---->
+    <section>
+
+    </section>
+    <!-- Formulario para enviar mensajes de contacto -->
+    <section>
+
+        <form action="enviar_contacto.html" method="post">
+
+            <!-- Campo para el nombre -->
+            <label>
+                Nombre 
+                <span style="color:red">*</span> <!-- Obligatorio -->
+            </label><br>
+            <input type="text" name="nombre" required>
+            <br><br>
+        
+            <!-- Campo para el teléfono -->
+            <label>
+                Teléfono 
+                <span style="color:red">*</span>
+            </label><br>
+            <input type="tel" name="telefono" required>
+            <br><br>
+
+            <!-- Selector del tipo de mensaje -->
+            <label>
+                Tipo de mensaje 
+                <span style="color:red">*</span>
+            </label><br>
+            <select name="tipo" required>
+                <option value="">Seleccione una opción</option>
+                <option>Ayuda</option>
+                <option>Reclamación</option>
+                <option>Propuesta</option>
+            </select>
+            <br><br>
+
+            <!-- Área de texto para escribir el mensaje -->
+            <label>
+                Mensaje 
+                <span style="color:red">*</span>
+            </label><br>
+            
+            
+                <!-- textarea para el mensaje:
+                - oninput="resultado.value = this.value.length" 
+                es un pequeño JavaScript inline que hace lo siguiente:
+                    1. 'this.value' obtiene el contenido actual del textarea.
+                    2. '.length' calcula cuántos caracteres hay escritos.
+                    3. 'resultado.value =' actualiza el <output> con ese número.
+                Así se ve en tiempo real cuántos caracteres se han escrito.-->
+            <textarea name="mensaje" rows="5" cols="30" maxlength="100" required  oninput="resultado.value = this.value.length"></textarea>
+            <br>
+            
+                <!--Muestra el contador de caracteres:
+                - <output> es un elemento HTML que puede mostrar valores calculados.
+                - Inicialmente muestra 0.
+                - Se actualiza gracias al JavaScript del oninput anterior.-->
+
+            <small>Caracteres: <output name="resultado">0</output> / 100</small>
+            <br><br>
+
+            <!-- Botón para enviar el formulario -->
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Cancelar">
+            
+            <!--Poner mapa y ubicacion -->
+
+    </section>
+        </form>
     <footer id="piepagina">
         <div>
             <h2>Vida libre</h2>
