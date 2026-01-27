@@ -21,7 +21,151 @@
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
         </nav>
     </header>
+<section>
+    <dev>
+        <a>
+            Reservas y pedidas
+        </a>
+        <h2>
+            Reserva tu mesa o haz un pedido a domicilio de forma rápida y sencilla
+        </h2>
+    </dev>
+</section>
+<section>
+<!-- Sección de reservas -->
+    <h2>Reserva de Mesa</h2>
+    <a href="domicilio"></a>
+    <!-- Formulario para hacer reservas -->
+    <form action="reservar.html" method="post">
 
+
+        <!-- Campo nombre de la persona que reserva -->
+        <label>
+            Nombre
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="text" name="nombre_reserva" placeholder="Nombre y Apellidos" required>
+        <br><br>
+
+
+        <!-- Campo teléfono de la persona que reserva -->
+        <label>
+            Teléfono
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="tel" name="telefono_reserva" placeholder="Escriba su numero de telefono">
+        <br><br>
+
+
+        <!-- Campo para seleccionar la hora de la reserva -->
+        <label>
+            Hora
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="time" name="hora" required>
+        <br><br>
+
+
+        <!-- Campo para indicar número de personas -->
+        <label>
+            Número de personas
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="number" name="personas" min="1" required>
+        <br><br>
+
+
+        <!-- Selector de zona de la mesa -->
+        <label>
+            Zona de la mesa
+            <span style="color:red">*</span>
+        </label><br>
+        <select name="zona" required>
+            <option value="">Seleccione su reserva</option>
+            <option>Interior</option>
+            <option>Terraza</option>
+            <option>Barra</option>
+        </select>
+        <br><br>
+
+
+        <label>Comentarios adicionales</label><br>
+        <textarea name="comentarios" rows="5"></textarea>
+        <br><br>
+        <!-- Botones para enviar o cancelar -->
+        <input type="submit" value="Reservar">
+        <input type="button" value="Cancelar">
+    </form>
+</section>
+<section>
+    <!--Pedido a domicilio-->
+    <h2>Pedido a Domicilio</h2>
+    <a href="domicilio"></a>
+    <!-- Formulario para hacer reservas -->
+    <form action="pedir.html" method="post">
+        <a>Realiza tu pedido y te llamaremos para confirmarlo y coordinar la entrega</a> <br><br>
+
+
+        <!-- Campo nombre de la persona que reserva -->
+        <label>
+            Nombre
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="text" name="nombre_reserva" placeholder="Nombre y Apellidos" required>
+        <br><br>
+
+
+        <!-- Campo teléfono de la persona que reserva -->
+        <label>
+            Teléfono
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="tel" name="telefono_reserva" placeholder="Escriba su numero de telefono">
+        <br><br>
+
+
+        <!-- Campo para seleccionar la hora de la reserva -->
+        <label>
+            Hora
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="time" name="hora" required>
+        <br><br>
+
+
+        <!-- Campo para indicar número de personas -->
+        <label>
+            Número de personas
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="number" name="personas" min="1" required>
+        <br><br>
+
+
+        <!-- Selector de zona de la mesa -->
+        <label>
+            Zona de la mesa
+            <span style="color:red">*</span>
+        </label><br>
+        <select name="zona" required>
+            <option value="">Seleccione su reserva</option>
+            <option>Interior</option>
+            <option>Terraza</option>
+            <option>Barra</option>
+        </select>
+        <br><br>
+
+
+        <label>Comentarios adicionales</label><br>
+        <textarea name="comentarios" rows="5"></textarea>
+        <br><br>
+        <!-- Botones para enviar o cancelar -->
+        <input type="submit" value="Reservar">
+        <input type="button" value="Cancelar">
+    </form>
+
+
+</section>
     <footer id="piepagina">
         <div>
             <h2>Vida libre</h2>
