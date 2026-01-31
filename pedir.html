@@ -53,7 +53,7 @@
             Teléfono
             <span style="color:red">*</span>
         </label><br>
-        <input type="tel" name="telefono_reserva" placeholder="Escriba su numero de telefono">
+        <input type="tel" name="telefono_reserva" placeholder="+34 612 345 678">
         <br><br>
 
 
@@ -62,7 +62,7 @@
             Hora
             <span style="color:red">*</span>
         </label><br>
-        <input type="time" name="hora" required>
+        <input type="time" name="hora" placeholder="Pon una hora" required>
         <br><br>
 
 
@@ -97,6 +97,8 @@
         <input type="button" value="Cancelar">
     </form>
 </section>
+<br><br>
+
 <section>
     <!--Pedido a domicilio-->
     <h2>Pedido a Domicilio</h2>
@@ -106,61 +108,67 @@
         <a>Realiza tu pedido y te llamaremos para confirmarlo y coordinar la entrega</a> <br><br>
 
 
-        <!-- Campo nombre de la persona que reserva -->
+        <!-- Campo nombre de pedido a domicilio -->
         <label>
             Nombre
             <span style="color:red">*</span>
         </label><br>
-        <input type="text" name="nombre_reserva" placeholder="Nombre y Apellidos" required>
+        <input type="text" name="nombre_domicilio" placeholder="Nombre y Apellidos" required>
         <br><br>
 
-
-        <!-- Campo teléfono de la persona que reserva -->
+        <!-- Campo de email de pedido a domicilio-->
+        <label>
+            Email
+            <span style="color:red">*</span>
+        </label><br>
+        <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+        <br><br>
+        <!-- Campo teléfono de pedido a domicilio -->
         <label>
             Teléfono
             <span style="color:red">*</span>
         </label><br>
-        <input type="tel" name="telefono_reserva" placeholder="Escriba su numero de telefono">
+        <input type="tel" name="telefono_domicilio" placeholder="+34 612 345 678">
         <br><br>
 
 
-        <!-- Campo para seleccionar la hora de la reserva -->
+        <!-- Campo para seleccionar la ciudad de pedido a domicilio -->
         <label>
-            Hora
+            Ciudad
             <span style="color:red">*</span>
         </label><br>
-        <input type="time" name="hora" required>
+        <input type="text" name="ciudad" placeholder="Madrid" required>
         <br><br>
 
 
-        <!-- Campo para indicar número de personas -->
+        <!-- Campo para indicar direccion completa -->
         <label>
-            Número de personas
+            Direccion completa
             <span style="color:red">*</span>
         </label><br>
-        <input type="number" name="personas" min="1" required>
+        <input type="text" name="Direccion" placeholder="Calle, numero, piso, puerta" required>
         <br><br>
 
 
-        <!-- Selector de zona de la mesa -->
+        <!-- Codigo postal -->
         <label>
-            Zona de la mesa
+            Codigo postal
             <span style="color:red">*</span>
         </label><br>
-        <select name="zona" required>
-            <option value="">Seleccione su reserva</option>
-            <option>Interior</option>
-            <option>Terraza</option>
-            <option>Barra</option>
-        </select>
+        <input type="number" name="Codigo" placeholder="28001" required>
         <br><br>
 
+
+        <label>Detalles del pedido</label><br>
+        <textarea name="detalles" rows="5"></textarea>
+        <br><br>
 
         <label>Comentarios adicionales</label><br>
-        <textarea name="comentarios" rows="5"></textarea>
+        <textarea name="comentarios_pedido" rows="5"></textarea>
         <br><br>
+
         <!-- Botones para enviar o cancelar -->
-        <input type="submit" value="Reservar">
+        <input type="submit" value="Enviar pedido">
         <input type="button" value="Cancelar">
     </form>
 
