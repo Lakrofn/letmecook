@@ -1,3 +1,5 @@
+/* cabecera */
+
 #cabecera{
     width: 95%;
     height: 70px;
@@ -24,6 +26,7 @@
 
 #letmecook a span{
     font-size: 28px;
+    color: #ff7300;
 }
 
 #menu{
@@ -39,14 +42,14 @@
 
 .naranja{
     background-color: transparent;
-    color: #ff7300;
-    border-radius: 10px;
+    color: #000000;
     padding: 3px 10px;
     font-size: 18px;
     text-align: center;
 }
 .naranja:hover{
     background-color: #ffe1c8;
+    color: #ff7300;
     cursor: pointer;
 }
 .naranja:active{
@@ -81,6 +84,122 @@
     }
 }
 
+/* sección debajo de la cabecera */
+#debajocabecera{
+    background-color: #ff7300;
+    color: white;
+    margin-top: 70px;
+    height: 150px;
+    align-content: center;
+    justify-items: center;
+}
+#debajocabecera div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#debajocabecera div h3{
+    font-weight: normal;
+}
+
+/*PAGINA DE RESERVAS Y PEDIDOS*/
+/* sección de reservas y pedidos */
+#pedidosreserva{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40px;
+    border-bottom: #e8e8e8 1px solid;
+}
+#pedidosreserva div{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: left;
+    height: 100%;
+}
+#pedidosreserva div a{
+    text-decoration: none;
+    color: #ff7300;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.actual{
+    border-bottom: #ff7300 2px solid;
+    color: #ff7300;
+    font-weight: bold;
+}
+
+/*FORMULARIO DE RESERVA Y PEDIDOS*/
+#formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+#formulario div{
+    border: #e8e8e8 1px solid;
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 700px;
+    width: 100%;
+}
+#formulario div input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: #e8e8e8 1px solid;
+    border-radius: 5px;
+}
+
+#formulario div input[type="submit"],[type="button"]{
+    background-color: #fea963;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+#formulario div input[type="submit"]:hover,[type="button"]:hover{
+    background-color: #ff7300;
+}
+#formulario div input[type="submit"]:active,[type="button"]:active{
+    box-shadow: #000000 0px 0px 3px;
+}
+
+#formulario div span{
+    color: #ff7300;
+}
+
+/* PAGINA DE AYUDA */
+/*seccion de info*/
+
+#info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+}
+#info div{
+    box-shadow: #cfcece 0px 0px 5px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 200px;
+    width: 100%;
+    margin: 10px;
+    justify-items: center;
+}
+
+#info div h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* pie de página */
 #piepagina{
     display: flex;
     flex-wrap: wrap;

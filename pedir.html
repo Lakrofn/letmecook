@@ -9,18 +9,111 @@
 <body>
      <header id="cabecera">
         <div id="letmecook">
-            <img src="./images/letmecook.ico" alt="logo" width="65">
-            <a href="index.html"><span class="naranja">Let me cook</span></a>
+            <a href="index.html"><img src="./images/letmecook.ico" alt="logo" width="65"></a>
+            <a href="index.html"><span>Let me cook</span></a>
         </div>
         <div class="hamburguesa" onclick="toggleMenu()">☰</div>
         <nav id="menu">
             <div><a href="index.html" class="naranja">Inicio</a></div>
             <div><a href="carta.html" class="naranja">Carta</a></div>
-            <div><a href="pedir.html" class="naranja">Domicilio y reservas</a></div>
+            <div><a href="pedir.html" class="naranja actual">Reservas y Pedidos</a></div>
             <div><a href="promociones.html" class="naranja">Promociones</a></div>
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
         </nav>
     </header>
+    <section id="debajocabecera">
+        <div>
+            <p>
+                Reservas y pedidos
+            </p>
+            <h3>
+                Reserva tu mesa o haz un pedido a domicilio de forma rápida y sencilla
+            </h3>
+        </div>
+    </section>
+    <section id="pedidosreserva">
+        <div>
+            <a href="pedir.html" class="actual"><div>Pedido a domicilio</div></a>
+            <a href="reservar.html" ><div>Reservar mesa</div></a>
+        </div>
+    </section>
+    <section id="formulario">
+        <div>
+            <!--Pedido a domicilio-->
+            <h2>Pedido a Domicilio</h2>
+            <a href="domicilio"></a>
+            <!-- Formulario para hacer reservas -->
+            <form action="pedir.html" method="post">
+                <a>Realiza tu pedido y te llamaremos para confirmarlo y coordinar la entrega</a> <br><br>
+
+
+                <!-- Campo nombre de pedido a domicilio -->
+                <label>
+                    Nombre
+                    <span>*</span>
+                </label><br>
+                <input type="text" name="nombre_domicilio" placeholder="Nombre y Apellidos" required>
+                <br><br>
+
+                <!-- Campo de email de pedido a domicilio-->
+                <label>
+                    Email
+                    <span>*</span>
+                </label><br>
+                <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+                <br><br>
+                <!-- Campo teléfono de pedido a domicilio -->
+                <label>
+                    Teléfono
+                    <span>*</span>
+                </label><br>
+                <input type="tel" name="telefono_domicilio" placeholder="+34 612 345 678">
+                <br><br>
+
+
+                <!-- Campo para seleccionar la ciudad de pedido a domicilio -->
+                <label>
+                    Ciudad
+                    <span>*</span>
+                </label><br>
+                <input type="text" name="ciudad" placeholder="Madrid" required>
+                <br><br>
+
+
+                <!-- Campo para indicar direccion completa -->
+                <label>
+                    Direccion completa
+                    <span>*</span>
+                </label><br>
+                <input type="text" name="Direccion" placeholder="Calle, numero, piso, puerta" required>
+                <br><br>
+
+
+                <!-- Codigo postal -->
+                <label>
+                    Codigo postal
+                    <span>*</span>
+                </label><br>
+                <input type="number" name="Codigo" placeholder="28001" required>
+                <br><br>
+
+
+                <label>Detalles del pedido</label><br>
+                <textarea name="detalles" rows="5"></textarea>
+                <br><br>
+
+                <label>Comentarios adicionales</label><br>
+                <textarea name="comentarios_pedido" rows="5"></textarea>
+                <br><br>
+
+                <!-- Botones para enviar o cancelar -->
+                <input type="submit" value="Enviar pedido">
+                <input type="button" value="Cancelar">
+            </form>
+
+        </div>
+    </section>
+    
 
     <footer id="piepagina">
         <div>
