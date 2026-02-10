@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header id="cabecera">
+    <header id="cabecera">
         <div id="letmecook">
             <img src="./images/letmecook.ico" alt="logo" width="65">
             <a href="index.html"><span class="naranja">Let me cook</span></a>
@@ -21,7 +21,199 @@
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
         </nav>
     </header>
+    <section id="debajocabecera">
+        <div>
+            <p>
+                Nuestra Carta
+            </p>
+            <h3>
+                Descubre nuestra selección de platos elaborados con ingredientes frescos y de temporada
+            </h3>
+        </div>
+    </section>
+    <br>
+    <!--Parte principal de la carta-->
+    <main class="carta">
+        <!--Botones de la carta. Ahora no se ven porque lo tapa el footer-->
+        <section class="botones">
+            <a href="#todos" class="activo">Todos</a>
+            <a href="#entrantes">Entrantes</a>
+            <a href="#hamburguesas">Hamburguesas</a>
+            <a href="#patatas">Patatas</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#postres">Postres</a>
+            <a href="#novedades">Novedades</a>
+        </section>
+        <!--A partir de aqui se van a poner los platos-->
+        <h2 id="entrantes" class="parte_menu" >Entrantes</h2>
+        <section class="platos">
+            <!--Entrantes-->
+            <article class="tarjetitas">
+                <img src="./images/bocaditos de queso.jpg" alt="Bocaditos">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Bocaditos de queso crema</h3>
+                        <span class="precio">3,50</span>
+                    </div>
+                    <p>Queso crema, jamón, tortillas de harina y nuez.</p>
+                </div>
+            </article>
 
+            <article class="tarjetitas">
+                <img src="./images/nachos.jpg" alt="Nachos">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Nachos cheese bites</h3>
+                        <span class="precio">4,00</span>
+                    </div>
+                    <p>Queso crema, queso cheddar, jalapeños, empanizado crujiente y salsa de queso.</p>
+                </div>
+            </article>
+        </section>
+        <!--hamburguesas-->
+        <h2 id="hamburguesas" class="parte_menu" >Hamburguesas</h2>
+        <section class="platos">
+            <article class="tarjetitas">
+                <img src="./images/simple smash.jpg" alt="simple smash" height="">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>SIMPLE SMASH</h3>
+                        <span class="precio">6,50</span>
+                    </div>
+                    <p>Potato roll, 90g de carne rubia gallega smash, queso cheddar y flame sauce</p>
+                </div>
+            </article>
+            
+            <article class="tarjetitas">
+                <img src="./images/red hot chilli.jpg" alt="red hot chilli">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>RED HOT CHILLI</h3>
+                        <span class="precio">10,00</span>
+                    </div>
+                    <p>Potato roll, 90g de carne rubia gallega smash, queso cheddar, nachos tex-mex, cebolla en aros y salsa red hot chillo</p>
+                </div>
+            </article>
+
+            <article class="tarjetitas">
+                <img src="./images/american.jpg" alt="american">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>AMERICAN</h3>
+                        <span class="precio">9,50</span>
+                    </div>
+                    <p>Potato roll, doble smash burger 90g de carne rubia gallega smash, flame sauce, queso cheddar, lechuga romana, tomate fresco, cebolla morada</p>
+                </div>
+            </article>
+
+            <article class="tarjetitas">
+                <img src="./images/doble cheese bacon.jpg" alt="doble cheese bacon">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>DOBLE CHEESE BACON</h3>
+                        <span class="precio">10,00</span>
+                    </div>
+                    <p>Potato roll, doble smash burger 90g de carne rubia gallega smash, con crujiente bacon, cebolla frita, queso cheddar y flame sauce</p>
+                </div>
+            </article>
+        </section>
+        <!--Patatas-->
+        <h2 id="patatas" class="parte_menu">Patatas</h2>
+        <section class="platos">
+            <article class="tarjetitas">
+                <img src="./images/patatas con sal.jpg" alt="patatas con sal">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Patatas con sal</h3>
+                        <span class="precio">2,00</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjetitas">
+                <img src="./images/patatas sourcream.jpg" alt="patatas sourcream">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Patatas SourCream & Onion</h3>
+                        <span class="precio">2,00</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--Bebidas-->
+        <h2 id="bebidas" class="parte_menu">Bebidas</h2>
+        <section class="platos">
+            <article class="tarjetitas">
+                <img src="./images/Agua 50 CL.jpg" alt="agua">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Agua 50 CL</h3>
+                        <span class="precio">1,20</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tarjetitas">
+                <img src="./images/zumos.jpg" alt="zumos">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Zumos</h3>
+                        <span class="precio">1,50</span>
+                    </div>
+                    <p>naranja, limón.</p>
+                </div>
+            </article>
+
+            <article class="tarjetitas">
+                <img src="./images/Refrescos.jpg" alt="refrescos">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Refrescos</h3>
+                        <span class="precio">1,70</span>
+                    </div>
+                    <p>Cola, fanta, acuario</p>
+                </div>
+            </article>
+        </section>
+        <!--Postres-->
+        <h2 id="postres" class="parte_menu">Postres</h2>
+        <section class="platos">
+            <article class="tarjetitas">
+                <img src="./images/Tarta de queso.jpg" alt="Tarta de queso">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Tarta de queso</h3>
+                        <span class="precio">4,00</span>
+                    </div>
+                    <p>Tarta horneada con mermelada de frutos rojos.</p>
+                </div>
+            </article>
+            <article class="tarjetitas">
+                <img src="./images/Pastel de oreo.jpg" alt="Pastel de oreo">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Pastel de oreo</h3>
+                        <span class="precio">3,50</span>
+                    </div>
+                    <p>Base de galleta oreo, crema y mini oreos</p>
+                </div>
+            </article>
+        </section> 
+        <!--Novedades-->
+        <h2 id="novedades" class="parte_menu">Novedades</h2>
+        <section class="platos">
+            <article class="tarjetitas">
+                <img src="./images/Serranita.jpg" alt="Serranita">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Serranita</h3>
+                        <span class="precio">11,00</span>
+                    </div>
+                    <p>Pan brioche con sesamo negro, doble smash burger 90g de carne rubia gallega smash, queso, pimiento frito y salsa de ajo</p>
+                </div>
+            </article>
+        </section>
+    </main>
     <footer id="piepagina">
         <div>
             <h2>Vida libre</h2>

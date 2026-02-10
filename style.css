@@ -104,6 +104,89 @@
     font-weight: normal;
 }
 
+/* PAGINA DE CARTA */
+/* sección de botones */
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: #e8e8e8 1px solid;
+}
+.botones a{
+    background-color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(114, 114, 114);
+    border-radius: 30px;
+}
+.botones a:hover{
+    background-color: #ffe1c8;
+    color: #ff7300;
+}
+.botones a:active{
+    background-color: #fcb478;
+    color: #ff7300;
+}
+
+/* sección de platos */
+.platos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+.tarjetitas{
+    box-shadow: #000000 0px 0px 1px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.tarjetitas img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    transition: transform 1s;
+}
+.tarjetitas img:hover{
+    transform: scale(1.05);
+}
+.tarjetitas .contenido{
+    padding: 0px 25px;
+}
+
+.tarjetitas .contenido .cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjetitas:hover{
+    color: #ff7300;
+    box-shadow: #ff7300 0px 0px 15px;
+    transition: 1s;
+}
+
+.precio{
+    color: #ff7300;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.parte_menu{
+    font-size: 38px;
+    color: #ff7300;
+    font-weight: bold;
+    justify-self: center;
+}
+
+
+
 /*PAGINA DE RESERVAS Y PEDIDOS*/
 /* sección de reservas y pedidos */
 #pedidosreserva{
