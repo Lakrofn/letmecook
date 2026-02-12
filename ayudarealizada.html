@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Let me cook</title>
+    <link rel="icon" type="image/vnd.icon" href="ruta/a/tu/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <header id="cabecera">
+        <div id="letmecook">
+            <img src="./images/letmecook.ico" alt="logo" width="65">
+            <a href="index.html"><span class="naranja">Let me cook</span></a>
+        </div>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <div><a href="index.html" class="naranja">Inicio</a></div>
+            <div><a href="carta.html" class="naranja">Carta</a></div>
+            <div><a href="pedir.html" class="naranja">Domicilio y reservas</a></div>
+            <div><a href="promociones.html" class="naranja">Promociones</a></div>
+            <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
+        </nav>
+    </header>
+    <section id="confirmacion">
+        <div>
+            <h2>¡Tu mensaje ha sido enviado!</h2>
+            <p>Te contacactaremos pronto para darte más información</p>
+        </div>
+    </section>
+    <footer id="piepagina">
+        <div>
+            <h2>Vida libre</h2>
+            <p>Portal de información y apoyo contra la violencia de género.</p>
+        </div>
+        <div>
+            <h2>Teléfonos de ayuda</h2>
+            <p><strong>016</strong> - Atención 24h</p>
+            <p><strong>112</strong> - Emergencias</p>
+        </div>
+        <div>
+            <h2>Recursos</h2>
+            <p>Ministerio de Igualdad</p>
+            <p>Instituto de la Mujer</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('#menu');
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>

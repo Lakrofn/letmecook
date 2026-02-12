@@ -257,6 +257,29 @@
     color: #ff7300;
 }
 
+/* PAGINA DE PEDIDO Y RESERVA REALIZADO */
+#confirmacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+    margin-top: 100px;
+}
+#confirmacion div{
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 400px;
+    margin: 10px;
+    justify-items: center;
+    border: #ff7300 1px solid;
+    color: #ff7300;
+    box-shadow: #ff7300 0px 0px 15px;
+}
+
+#confirmacion div:hover{
+    box-shadow: #ff7300 0px 0px 30px;
+}
+
 /* PAGINA DE AYUDA */
 /*seccion de info*/
 
