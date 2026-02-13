@@ -5,53 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let me cook</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
-     <header id="cabecera">
+    <header id="cabecera">
         <div id="letmecook">
-            <img src="./images/letmecook.ico" alt="logo" width="65">
+            <img src="./images/logo.png" alt="logo" width="65">
             <a href="index.html"><span class="naranja">Let me cook</span></a>
         </div>
         <div class="hamburguesa" onclick="toggleMenu()">☰</div>
         <nav id="menu">
             <div><a href="index.html" class="naranja">Inicio</a></div>
-            <div><a href="carta.html" class="naranja">Carta</a></div>
-            <div><a href="pedir.html" class="naranja">Domicilio y reservas</a></div>
+            <div><a href="carta.html" class="naranja actual">Carta</a></div>
+            <div><a href="pedir.html" class="naranja">Reservas y Pedidos</a></div>
             <div><a href="promociones.html" class="naranja">Promociones</a></div>
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
+            <div><a href="login.html" class="naranja">Iniciar sesión</a></div>
         </nav>
     </header>
-
-    <section>
-    <dev>
-        <a>
-            Nuestra Carta
-        </a>
-        <h2>
-            Descubre nuestra selección de platos elaborados con ingredientes frescos y de temporada
-        </h2>
-    </dev>
-</section>
-<br>
+    <section id="debajocabecera">
+        <div>
+            <p>
+                Nuestra Carta
+            </p>
+            <h3>
+                Descubre nuestra selección de platos elaborados con ingredientes frescos y de temporada
+            </h3>
+        </div>
+    </section>
+    <br>
     <!--Parte principal de la carta-->
     <main class="carta">
         <!--Botones de la carta. Ahora no se ven porque lo tapa el footer-->
         <section class="botones">
-            <a href="#todos" class="botones-carta activo">Todos</a>
-            <a href="#entrantes" class="botones-carta">Entrantes</a>
-            <a href="#hamburguesas" class="botones-carta">Hamburguesas</a>
-            <a href="#patatas" class="botones-carta">Patatas</a>
-            <a href="#bebidas" class="botones-carta">Bebidas</a>
-            <a href="#postres" class="botones-carta">Postres</a>
-            <a href="#novedades" class="botones-carta">Novedades</a>
+            <a href="#todos" class="activo">Todos</a>
+            <a href="#entrantes">Entrantes</a>
+            <a href="#hamburguesas">Hamburguesas</a>
+            <a href="#patatas">Patatas</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#postres">Postres</a>
+            <a href="#novedades">Novedades</a>
         </section>
-<!--A partir de aqui se van a poner los platos-->
-        <div class="platos">
-            <div id="todos"></div>
+        <!--A partir de aqui se van a poner los platos-->
+        <h2 id="entrantes" class="parte_menu" >Entrantes</h2>
+        <section class="platos">
             <!--Entrantes-->
-            <h2 id="entrantes" class="seccion">Entrantes</h2>
             <article class="tarjetitas">
-                <img src="./images/bocaditos de queso.jpg" alt="Bocaditos">
+                <img src="./images/bocaditos_de_queso.jpg" alt="Bocaditos">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>Bocaditos de queso crema</h3>
@@ -71,10 +71,12 @@
                     <p>Queso crema, queso cheddar, jalapeños, empanizado crujiente y salsa de queso.</p>
                 </div>
             </article>
-            <!--hamburguesas-->
-            <h2 id="hamburguesa" class="seccion">Hamburguesas</h2>
+        </section>
+        <!--hamburguesas-->
+        <h2 id="hamburguesas" class="parte_menu" >Hamburguesas</h2>
+        <section class="platos">
             <article class="tarjetitas">
-                <img src="./images/simple smash.jpg" alt="simple smash">
+                <img src="./images/simple_smash.jpg" alt="simple smash" height="">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>SIMPLE SMASH</h3>
@@ -85,7 +87,7 @@
             </article>
             
             <article class="tarjetitas">
-                <img src="./images/red hot chilli.jpg" alt="red hot chilli">
+                <img src="./images/red_hot_chilli.jpg" alt="red hot chilli">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>RED HOT CHILLI</h3>
@@ -107,7 +109,7 @@
             </article>
 
             <article class="tarjetitas">
-                <img src="./images/doble cheese bacon.jpg" alt="doble cheese bacon">
+                <img src="./images/doble_cheese_bacon.jpg" alt="doble cheese bacon">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>DOBLE CHEESE BACON</h3>
@@ -116,10 +118,12 @@
                     <p>Potato roll, doble smash burger 90g de carne rubia gallega smash, con crujiente bacon, cebolla frita, queso cheddar y flame sauce</p>
                 </div>
             </article>
-            <!--Patatas-->
-            <h2 id="patatas" class="seccion">Patatas</h2>
+        </section>
+        <!--Patatas-->
+        <h2 id="patatas" class="parte_menu">Patatas</h2>
+        <section class="platos">
             <article class="tarjetitas">
-                <img src="./images/patatas con sal.jpg" alt="patatas con sal">
+                <img src="./images/patatas_con_sal.jpg" alt="patatas con sal">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>Patatas con sal</h3>
@@ -129,7 +133,7 @@
             </article>
 
             <article class="tarjetitas">
-                <img src="./images/patatas sourcream.jpg" alt="patatas sourcream">
+                <img src="./images/patatas_sourcream.jpg" alt="patatas sourcream">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>Patatas SourCream & Onion</h3>
@@ -137,10 +141,12 @@
                     </div>
                 </div>
             </article>
-            <!--Bebidas-->
-            <h2 id="bebidas" class="seccion">Bebidas</h2>
+        </section>
+        <!--Bebidas-->
+        <h2 id="bebidas" class="parte_menu">Bebidas</h2>
+        <section class="platos">
             <article class="tarjetitas">
-                <img src="./images/Agua 50 CL.jpg" alt="agua">
+                <img src="./images/Agua_50_CL.jpg" alt="agua">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>Agua 50 CL</h3>
@@ -170,10 +176,12 @@
                     <p>Cola, fanta, acuario</p>
                 </div>
             </article>
-            <!--Postres-->
-            <h2 id="postres" class="seccion">Postres</h2>
+        </section>
+        <!--Postres-->
+        <h2 id="postres" class="parte_menu">Postres</h2>
+        <section class="platos">
             <article class="tarjetitas">
-                <img src="./images/Tarta de queso.jpg" alt="Tarta de queso">
+                <img src="./images/Tarta_de_queso.jpg" alt="Tarta de queso">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>Tarta de queso</h3>
@@ -182,9 +190,8 @@
                     <p>Tarta horneada con mermelada de frutos rojos.</p>
                 </div>
             </article>
-
             <article class="tarjetitas">
-                <img src="./images/Pastel de oreo.jpg" alt="Pastel de oreo">
+                <img src="./images/Pastel_de_oreo.jpg" alt="Pastel de oreo">
                 <div class="contenido">
                     <div class="cabecera">
                         <h3>Pastel de oreo</h3>
@@ -193,8 +200,10 @@
                     <p>Base de galleta oreo, crema y mini oreos</p>
                 </div>
             </article>
-            <!--Novedades-->
-            <h2 id="novedades" class="seccion">Novedades</h2>
+        </section> 
+        <!--Novedades-->
+        <h2 id="novedades" class="parte_menu">Novedades</h2>
+        <section class="platos">
             <article class="tarjetitas">
                 <img src="./images/Serranita.jpg" alt="Serranita">
                 <div class="contenido">
@@ -205,31 +214,42 @@
                     <p>Pan brioche con sesamo negro, doble smash burger 90g de carne rubia gallega smash, queso, pimiento frito y salsa de ajo</p>
                 </div>
             </article>
+        </section>
 
-        </div>
+        <!-- Descargar -->
+        <section id="descarga">
+            <div class="descarga">
+                <h2>¿Quieres ver la carta completa?</h2>
+                <p>Descarga la carta completa en formato PDF</p>
+                <a>Descargar</a>
+            </div>
+        </section>
+        <a href="#debajocabecera" class="fijo"><img src="images/flecha.jpg" alt="flecha"></a>
     </main>
-
     <footer id="piepagina">
-        <div>
-            <h2>Vida libre</h2>
-            <p>Portal de información y apoyo contra la violencia de género.</p>
+        <div class="piepagina">
+            <div>
+                <h2>Let Me Cook</h2>
+                <p>Restaurante especializado en hamburguesas gourmet con ingredientes de calidad desde 1976.</p>
+            </div>
+            <div>
+                <h2>Horarios</h2>
+                <p>Martes a Jueves: 13:00 - 23:00</p>
+                <p>Viernes a Sabado: 13:00 - 00:30</p>
+                <p>Domingo: 13:00 - 17:00</p>
+            </div>
+            <div>
+                <h2>Contacto</h2>
+                <p>Calle Principal, IES Jacarandá, Sevilla,</p>
+                <p>+34 912 345 678</p>
+                <p>info@letmecook.com</p>
+            </div>
         </div>
         <div>
-            <h2>Teléfonos de ayuda</h2>
-            <p><strong>016</strong> - Atención 24h</p>
-            <p><strong>112</strong> - Emergencias</p>
-        </div>
-        <div>
-            <h2>Recursos</h2>
-            <p>Ministerio de Igualdad</p>
-            <p>Instituto de la Mujer</p>
+            <hr>
+            <p>© 1976 Restaurante Let Me Cook. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('#menu');
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
