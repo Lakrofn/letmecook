@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Let me cook</title>
+    <link rel="icon" type="image/vnd.icon" href="ruta/a/tu/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+     <header id="cabecera">
+        <div id="letmecook">
+            <img src="./images/logo.png" alt="logo" width="65">
+            <a href="index.html"><span class="naranja">Let me cook</span></a>
+        </div>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <div><a href="index.html" class="naranja">Inicio</a></div>
+            <div><a href="carta.html" class="naranja">Carta</a></div>
+            <div><a href="pedir.html" class="naranja">Reservas y Pedidos</a></div>
+            <div><a href="promociones.html" class="naranja">Promociones</a></div>
+            <div><a href="ayuda.html" class="naranja actual">Ayuda</a></div>
+            <div class="inicio_sesion"><a href="login.html">Iniciar sesión</a></div>
+        </nav>
+    </header>
+    <section id="debajocabecera">
+        <div>
+            <p>Contacto y ayuda</p>
+            <h3> Estamos a la disposición del cliente. Contáctanos para cualquier consulta o sugerencia</h3>
+        </div>
+    </section>
+
+    <section id="info">
+        <!-- Teléfono -->
+        <div>
+            <h3>Teléfono</h3>
+            <p>
+                +34 912 345 678
+            </p>
+            <p>Lun - Dom: 12:00 - 23:00</p>
+        </div>
+    
+
+    <!-- Email -->
+        <div>
+            <h3>Email</h3>
+            <p>
+                info@letmecook.com
+            </p>
+            <p>Respuesta en 24h</p>
+        </div>
+
+    <!-- Dirección -->
+        <div>
+            <h3>Dirección</h3>
+            <p>
+                Calle Principal IES Jacarandá
+            </p>
+            <p>41310 Sevilla, España</p>
+        </div>
+
+    <!-- Horarios -->
+        <div>
+            <h3>Horarios</h3>
+            <p>Mar - Jue: 13:00 - 23:00</p>
+            <p>Vie - Sab: 13:00 - 00:30</p>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Formulario de contacto -->
+    <section id="formulario">
+        <div>
+            <form action="ayudarealizada.html" method="post">
+
+                <!-- Nombre -->
+                <label>
+                    Nombre <span>*</span>
+                </label><br>
+                <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                <br><br>
+
+                <!-- Apellidos -->
+                <label>
+                    Apellidos <span>*</span>
+                </label><br>
+                <input type="text" name="apellidos" placeholder="Escriba sus apellidos" required>
+                <br><br>
+
+                <!-- Teléfono -->
+                <label>
+                    Teléfono <span>*</span>
+                </label><br>
+                <input type="tel" name="telefono" placeholder="Escriba su teléfono" required>
+                <br><br>
+
+                <!-- Selector del tipo de mensaje -->
+                <label>
+                    Tipo de mensaje <span>*</span>
+                </label><br>
+                <select name="tipo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option>Ayuda</option>
+                    <option>Reclamación</option>
+                    <option>Propuesta</option>
+                </select>
+                <br><br>
+
+                <!-- Área de texto para escribir el mensaje -->
+                <label>
+                    Mensaje <span>*</span>
+                </label><br>
+                
+                <!-- textarea para el mensaje:-->
+                
+                <textarea name="mensaje" rows="5" cols="30" maxlength="500" placeholder="Escriba su mensaje aquí..." required oninput="resultado.value = this.value.length"></textarea>
+                <br>
+
+                <!--Muestra el contador de caracteres:-->
+                <small>Caracteres: <output name="resultado">0</output> / 500</small>
+                <br><br>
+
+                <!-- Botones -->
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Cancelar">
+
+            </form>
+        </div>
+    </section>
+    <footer id="piepagina">
+        <div class="piepagina">
+            <div>
+                <h2>Let Me Cook</h2>
+                <p>Restaurante especializado en hamburguesas gourmet con ingredientes de calidad desde 1976.</p>
+            </div>
+            <div>
+                <h2>Horarios</h2>
+                <p>Martes a Jueves: 13:00 - 23:00</p>
+                <p>Viernes a Sabado: 13:00 - 00:30</p>
+                <p>Domingo: 13:00 - 17:00</p>
+            </div>
+            <div>
+                <h2>Contacto</h2>
+                <p>Calle Principal, IES Jacarandá, Sevilla,</p>
+                <p>+34 912 345 678</p>
+                <p>info@letmecook.com</p>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <p>© 1976 Restaurante Let Me Cook. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

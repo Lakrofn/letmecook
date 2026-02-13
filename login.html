@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <title>Let me cook</title>
+</head>
+<body id="inicio">
+    <header id="cabecera">
+        <div id="letmecook">
+            <img src="./images/logo.png" alt="logo" width="65">
+            <a href="index.html"><span class="naranja">Let me cook</span></a>
+        </div>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <div><a href="index.html" class="naranja">Inicio</a></div>
+            <div><a href="carta.html" class="naranja">Carta</a></div>
+            <div><a href="pedir.html" class="naranja">Reservas y Pedidos</a></div>
+            <div><a href="promociones.html" class="naranja">Promociones</a></div>
+            <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
+            <div class="inicio_sesion"><a href="login.html" >Iniciar sesión</a></div>
+        </nav>
+    </header>
+    <div class="contenedor" id="contenedor">
+        <div class="forma-contenedor sign-up">
+            <form>
+                <h1>Registrate</h1>
+                <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span> Usa tu correo</span>
+                <input type="name" placeholder="nombre">
+                <input type="email" placeholder="correo">
+                <input type="password" placeholder="contraseña">
+                <button>Createla</button>
+            </form>
+        </div>
+        <div class="forma-contenedor sign-in">
+            <form>
+                <h1>Conectate con</h1>
+                <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span> o usa tu correo</span>
+                <input type="email" placeholder="correo">
+                <input type="password" placeholder="contraseña">
+                <a href="#">Has olvidado tu contraseña?</a>
+                <button id="botones">Inicia sesion</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel
+                toggle-left">
+            <h1>Bienvenido de vuelta</h1>
+            <p>inserta tus datos personales</p>
+            <button class="hidden" id="login">Inica sesion</button>
+        </div>
+        <div class="toggle-panel
+                toggle-right">
+            <h1>¿Eres nuevo?</h1>
+            <p>registrate con tus datos</p>
+            <button class="hidden" id="register">resgistrate</button>
+        </div>
+            </div>
+        </div>
+    </div>
+    <footer id="piepagina">
+        <div class="piepagina">
+            <div>
+                <h2>Let Me Cook</h2>
+                <p>Restaurante especializado en hamburguesas gourmet con ingredientes de calidad desde 1976.</p>
+            </div>
+            <div>
+                <h2>Horarios</h2>
+                <p>Martes a Jueves: 13:00 - 23:00</p>
+                <p>Viernes a Sabado: 13:00 - 00:30</p>
+                <p>Domingo: 13:00 - 17:00</p>
+            </div>
+            <div>
+                <h2>Contacto</h2>
+                <p>Calle Principal, IES Jacarandá, Sevilla,</p>
+                <p>+34 912 345 678</p>
+                <p>info@letmecook.com</p>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <p>© 1976 Restaurante Let Me Cook. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

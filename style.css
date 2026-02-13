@@ -1,0 +1,935 @@
+/* cabecera */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+#cabecera{
+    width: 95%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    z-index: 1000;
+    top: 0;
+    background: white;
+    position: fixed;
+}
+#letmecook{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 22px;
+    margin-right: auto;
+}
+#letmecook a{
+    text-decoration: none;
+    text-align: center;
+}
+
+#letmecook a span{
+    font-size: 28px;
+    color: #ff7300;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.naranja{
+    background-color: transparent;
+    color: #000000;
+    padding: 18px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.naranja:hover{
+    background-color: #ffe1c8;
+    color: #ff7300;
+    cursor: pointer;
+}
+.naranja:active{
+    background-color: #fcb478;
+    cursor: pointer;
+}
+
+.actual{
+    border-bottom: #ff7300 5px solid;
+    color: #ff7300;
+    font-weight: bold;
+    padding: 1px;
+}
+
+.inicio_sesion{
+    background-color: #ff7300;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.inicio_sesion a{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio_sesion:hover{
+    background-color: #ffa65d;
+    color: white;
+    cursor: pointer;
+}
+
+.inicio_sesion:active{
+    background-color: #fac294;
+}
+
+.hamburguesa{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    #menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 200px;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 20px 35px rgba(132, 0, 255, 0.1), 0 5px 15px rgba(174, 0, 255, 0.1);
+    }
+    .hamburguesa{
+        display: block;
+        color: #ff7300;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+    #menu a{
+        padding: 10px 0;
+    }
+    #contenedor{
+        margin-top: 100px;
+        margin-inline: 20px;
+    }
+
+    .hamburguesa:hover{
+        color: #ffac75;
+    }
+    .hamburguesa:active{
+        color: #ffcea7;
+    }
+}
+
+/* sección debajo de la cabecera */
+#debajocabecera{
+    background-color: #ff7300;
+    color: white;
+    margin-top: 70px;
+    height: 150px;
+    align-content: center;
+    justify-items: center;
+}
+#debajocabecera div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#debajocabecera div h3{
+    font-weight: normal;
+}
+
+/*PAGINA DE INICIO */
+/* sección de bienvenida */
+#foto_fondo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(images/exterior.jpg);
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    margin-top: 70px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+#foto_fondo div{
+    align-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+#foto_fondo div h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#foto_fondo div p{
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+#foto_fondo div a{
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.bienvenida_naranja{
+    background-color: #ff7300;
+    color: white;
+}
+.bienvenida{
+    background-color: #e8e8e8;
+    color: black;
+}
+.bienvenida_naranja:hover{
+    background-color: #ffe1c8;
+    color: #ff7300;
+}
+.bienvenida_naranja:active{
+    background-color: #fcb478;
+    color: #ff7300;
+}
+
+.bienvenida:hover{
+    background-color: #bbbaba;
+}
+
+.bienvenida:active{
+    background-color: #e8e8e8;
+}
+
+#foto_fondo div div{
+    display: flex;
+    background-color: orange;
+    width: 100%;
+}
+
+/* sección de sobre nosotros */
+#sobre_nosotros{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+#sobre_nosotros div{
+    max-width: 800px;
+}
+#sobre_nosotros div p{
+    font-size: 18px;
+}
+#sobre_nosotros div span{
+    font-size: 22px;
+    font-weight: bold;
+}
+/* sección de calidad de servicio */
+#calidad_servicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+#calidad_servicio div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #797979 0px 1px 2px;
+}
+
+#calidad_servicio div:hover{
+    box-shadow: #ff7300 0px 0px 15px;
+    transition: 1s;
+}
+
+#calidad_servicio div img{
+    width: 80px;
+}
+
+#calidad_servicio div p{
+    font-size: 18px;
+}
+
+#calidad_servicio div span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#calidad_servicio div a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ff7300;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+#calidad_servicio div a:hover{
+    background-color: #ffe1c8;
+    color: #000000;
+}
+#calidad_servicio div a:active{
+    background-color: #fcb478;
+}
+
+/* sección de mapa */
+#ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+#ubicacion #horarios, #mapa{
+    width: 400px;
+    height: 550px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: #797979 0px 0px 5px;
+}
+
+.horarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horarios span{
+    font-size: 18px;
+}
+
+#ubicacion #horarios:hover, #mapa:hover{
+    box-shadow: #ff7300 0px 0px 15px;
+    transition: 1s;
+}
+
+#ubicacion div p{
+    font-size: 18px;
+}
+#ubicacion div iframe{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#mapa p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#mapa span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* sección de galeria */
+#galeria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria div{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.galeria img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: #797979 0px 0px 5px;
+    transition: transform 0.5s;
+}
+
+#galeria img:hover{
+    transform: scale(1.25);
+}
+
+/* PAGINA DE CARTA */
+/* sección de botones */
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    border-bottom: #e8e8e8 1px solid;
+}
+.botones a{
+    background-color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: rgb(114, 114, 114);
+    border-radius: 30px;
+}
+.botones a:hover{
+    background-color: #ffe1c8;
+    color: #ff7300;
+}
+.botones a:active{
+    background-color: #fcb478;
+    color: #ff7300;
+}
+
+/* sección de platos */
+.platos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+.tarjetitas{
+    box-shadow: #000000 0px 0px 1px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.tarjetitas img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    transition: transform 1s;
+}
+.tarjetitas img:hover{
+    transform: scale(1.05);
+}
+.tarjetitas .contenido{
+    padding: 0px 25px;
+}
+
+.tarjetitas .contenido .cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarjetitas:hover{
+    color: #ff7300;
+    box-shadow: #ff7300 0px 0px 15px;
+    transition: 1s;
+}
+
+.precio{
+    color: #ff7300;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.parte_menu{
+    font-size: 38px;
+    color: #ff7300;
+    font-weight: bold;
+    justify-self: center;
+}
+
+/* sección de descarga */
+#descarga{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff2e8;
+}
+
+.descarga{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.descarga p{
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.descarga a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #ff7300;
+}
+
+.descarga a:hover{
+    background-color: #ffa65d;
+    cursor: pointer;
+}
+
+.descarga a:active{
+    background-color: #fac294;
+}
+
+/* imagen de flecha */
+.fijo{
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.fijo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+/*PAGINA DE RESERVAS Y PEDIDOS*/
+/* sección de reservas y pedidos */
+#pedidosreserva{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40px;
+    border-bottom: #e8e8e8 1px solid;
+}
+#pedidosreserva div{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: left;
+    height: 100%;
+}
+#pedidosreserva div a{
+    text-decoration: none;
+    color: #ff7300;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+/*FORMULARIO DE RESERVA Y PEDIDOS*/
+#formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+#formulario div{
+    border: #e8e8e8 1px solid;
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 700px;
+    width: 100%;
+}
+#formulario div input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: #e8e8e8 1px solid;
+    border-radius: 5px;
+}
+
+#formulario div input[type="submit"],[type="button"]{
+    background-color: #fea963;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+#formulario div input[type="submit"]:hover,[type="button"]:hover{
+    background-color: #ff7300;
+}
+#formulario div input[type="submit"]:active,[type="button"]:active{
+    box-shadow: #000000 0px 0px 3px;
+}
+
+#formulario div span{
+    color: #ff7300;
+}
+
+/* PAGINA DE PEDIDO Y RESERVA REALIZADO */
+#confirmacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+    margin-top: 100px;
+}
+#confirmacion div{
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 400px;
+    margin: 10px;
+    justify-items: center;
+    border: #ff7300 1px solid;
+    color: #ff7300;
+    box-shadow: #ff7300 0px 0px 15px;
+}
+
+#confirmacion div:hover{
+    box-shadow: #ff7300 0px 0px 30px;
+}
+
+/*PAGINA DE PROMOCIONES*/
+#promociones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+.promociones{
+    box-shadow: #000000 0px 0px 1px;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.promociones img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 250px;
+    transition: transform 1s;
+}
+.promociones img:hover{
+    transform: scale(1.05);
+}
+.promociones .contenido{
+    padding: 0px 25px;
+}
+
+.promociones .contenido .cabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promociones:hover{
+    color: #ff7300;
+    box-shadow: #ff7300 0px 0px 15px;
+    transition: 1s;
+}
+
+/* PAGINA DE AYUDA */
+/*seccion de info*/
+
+#info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+}
+#info div{
+    box-shadow: #cfcece 0px 0px 5px;
+    border-radius: 10px;
+    padding: 30px 40px;
+    max-width: 200px;
+    width: 100%;
+    margin: 10px;
+    justify-items: center;
+}
+
+#info div h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* pie de página */
+#piepagina{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ff7300;
+    color: white;
+    font-size: 15px;
+    margin-top: 100px;
+    padding: 30px 40px;
+    bottom: 0;
+}
+.piepagina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: 20px;
+    gap: 60px;
+}
+.piepagina div{
+    width: 300px;
+}
+
+/* login */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+#inicio{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#contenedor{
+    margin-top:550px;
+    width: 800px;
+    padding: 20px;
+}
+
+.contenedor{
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/COA_Spain_1945_1977.svg/640px-COA_Spain_1945_1977.svg.png); */
+}
+
+.contenedor:hover{
+    box-shadow: #ff7300 0px 0px 35px;
+    transition: 1s;
+}
+
+.contenedor p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0,3px;
+    margin: 20px 0;
+}
+
+.contenedor span{
+    font-size: 12px;
+}
+
+.contenedor a{
+    color: #ff7300;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.contenedor button{
+    background-color: #ff7300;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contenedor button.hidden{
+    background-color: transparent;
+    border-color: #f2f2f2;
+}
+.contenedor form{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.contenedor input{
+    background-color: #f2f2f2;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border-color: #ff7300;
+}
+
+.forma-contenedor{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.contenedor.active .sign-in{
+    transform: translateX(100%);
+}
+
+.sign-up{
+    left: 50%;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.contenedor.active .sign-up{
+    transform: translateX(-100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.social-icons{
+    margin: 20px 0;
+}
+
+.social-icons a{
+    border: 1px solid #f2f2f2;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-icons a:hover{
+    background-color: #fcd0ac;
+}
+
+.social-icons a:active{
+    background-color: #fce4d1;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 100;
+}
+
+.contenedor.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    background-color: #f2f2f2;
+    height: 100%;
+    background: linear-gradient(to right, #ff7300, #000000, #ff7300);
+    color: #f2f2f2;
+    position: relative;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
+}
+
+.contenedor.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.contenedor.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.contenedor.active .toggle-right{
+    transform: translateX(200%);
+}
+
+button:hover{
+    background-color: #f7ae73;
+}
+
+button:active{
+    background-color: #ff7300;
+    box-shadow: #ff7300 0px 0px 15px;
+}
