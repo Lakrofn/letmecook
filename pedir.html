@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let me cook</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
      <header id="cabecera">
         <div id="letmecook">
-            <a href="index.html"><img src="./images/letmecook.ico" alt="logo" width="65"></a>
+            <a href="index.html"><img src="./images/logo.png" alt="logo" width="65"></a>
             <a href="index.html"><span>Let me cook</span></a>
         </div>
         <div class="hamburguesa" onclick="toggleMenu()">☰</div>
@@ -19,6 +20,7 @@
             <div><a href="pedir.html" class="naranja actual">Reservas y Pedidos</a></div>
             <div><a href="promociones.html" class="naranja">Promociones</a></div>
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
+            <div><a href="login.html" class="naranja">Iniciar sesión</a></div>
         </nav>
     </header>
     <section id="debajocabecera">
@@ -116,26 +118,29 @@
     
 
     <footer id="piepagina">
-        <div>
-            <h2>Vida libre</h2>
-            <p>Portal de información y apoyo contra la violencia de género.</p>
+        <div class="piepagina">
+            <div>
+                <h2>Let Me Cook</h2>
+                <p>Restaurante especializado en hamburguesas gourmet con ingredientes de calidad desde 1976.</p>
+            </div>
+            <div>
+                <h2>Horarios</h2>
+                <p>Martes a Jueves: 13:00 - 23:00</p>
+                <p>Viernes a Sabado: 13:00 - 00:30</p>
+                <p>Domingo: 13:00 - 17:00</p>
+            </div>
+            <div>
+                <h2>Contacto</h2>
+                <p>Calle Principal, IES Jacarandá, Sevilla,</p>
+                <p>+34 912 345 678</p>
+                <p>info@letmecook.com</p>
+            </div>
         </div>
         <div>
-            <h2>Teléfonos de ayuda</h2>
-            <p><strong>016</strong> - Atención 24h</p>
-            <p><strong>112</strong> - Emergencias</p>
-        </div>
-        <div>
-            <h2>Recursos</h2>
-            <p>Ministerio de Igualdad</p>
-            <p>Instituto de la Mujer</p>
+            <hr>
+            <p>© 1976 Restaurante Let Me Cook. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('#menu');
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

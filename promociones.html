@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let me cook</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
      <header id="cabecera">
         <div id="letmecook">
-            <img src="./images/letmecook.ico" alt="logo" width="65">
+            <img src="./images/logo.png" alt="logo" width="65">
             <a href="index.html"><span class="naranja">Let me cook</span></a>
         </div>
         <div class="hamburguesa" onclick="toggleMenu()">☰</div>
@@ -19,30 +20,111 @@
             <div><a href="pedir.html" class="naranja">Reservas y Pedidos</a></div>
             <div><a href="promociones.html" class="naranja actual">Promociones</a></div>
             <div><a href="ayuda.html" class="naranja">Ayuda</a></div>
+            <div><a href="login.html" class="naranja">Iniciar sesión</a></div>
         </nav>
     </header>
+    <section id="debajocabecera">
+        <div>
+            <p>
+                Promociones
+            </p>
+            <h3>
+                Mantente informado sobre nuestra últimas ofertas y eventos especiales
+            </h3>
+        </div>
+    </section>
+    <section id="promociones">
+        <article class="promociones">
+                <img src="images/movil.jpg" alt="movil">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Promo por compartir</h3>
+                        <span class="precio">10%</span>
+                    </div>
+                    <p>Sube una foto etiquetando el local y recibe un descuento en tu proxima visita</p>
+                </div>
+            </article>
 
+            <article class="promociones">
+                <img src="./images/miercoles.jpg" alt="miercoles">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Miercoles locos</h3>
+                        <span class="precio">50%</span>
+                    </div>
+                    <p>Descuentos en todas las hamburguesas el Miercoles de 13:00 a 15:00</p>
+                </div>
+            </article>
+
+            <article class="promociones">
+                <img src="./images/2x1.jpg" alt="2x1">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>2x1 hamburguesas clasicas</h3>
+                        <span class="precio">2x1</span>
+                    </div>
+                    <p>Promocion por San Valentín</p>
+                </div>
+            </article>
+
+            <article class="promociones">
+                <img src="./images/menu.jpeg" alt="menu">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Agranda tu menú</h3>
+                        <span class="precio">2€</span>
+                    </div>
+                    <p>Por 2€ podras rellenar tu bebida</p>
+                </div>
+            </article>
+
+            <article class="promociones">
+                <img src="./images/tarjeta.jpg" alt="tarjeta">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Tarjetas de puntos</h3>
+                        <span class="precio"></span>
+                    </div>
+                    <p>Por cada 5 hamburguesas recibes una gratis</p>
+                </div>
+            </article>
+
+            <article class="promociones">
+                <img src="./images/cumpleaños.jpg" alt="cumpleaños">
+                <div class="contenido">
+                    <div class="cabecera">
+                        <h3>Cumpleañero come gratis</h3>
+                        <span class="precio">Gratis</span>
+                    </div>
+                    <p>Si viene con mínimo 3 personas, el cumpleañero comerá gratis</p>
+                </div>
+            </article>
+
+    </section>
     <footer id="piepagina">
-        <div>
-            <h2>Vida libre</h2>
-            <p>Portal de información y apoyo contra la violencia de género.</p>
+        <div class="piepagina">
+            <div>
+                <h2>Let Me Cook</h2>
+                <p>Restaurante especializado en hamburguesas gourmet con ingredientes de calidad desde 1976.</p>
+            </div>
+            <div>
+                <h2>Horarios</h2>
+                <p>Martes a Jueves: 13:00 - 23:00</p>
+                <p>Viernes a Sabado: 13:00 - 00:30</p>
+                <p>Domingo: 13:00 - 17:00</p>
+            </div>
+            <div>
+                <h2>Contacto</h2>
+                <p>Calle Principal, IES Jacarandá, Sevilla,</p>
+                <p>+34 912 345 678</p>
+                <p>info@letmecook.com</p>
+            </div>
         </div>
         <div>
-            <h2>Teléfonos de ayuda</h2>
-            <p><strong>016</strong> - Atención 24h</p>
-            <p><strong>112</strong> - Emergencias</p>
-        </div>
-        <div>
-            <h2>Recursos</h2>
-            <p>Ministerio de Igualdad</p>
-            <p>Instituto de la Mujer</p>
+            <hr>
+            <p>© 1976 Restaurante Let Me Cook. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('#menu');
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
