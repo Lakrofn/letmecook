@@ -1,5 +1,7 @@
 /* cabecera */
-
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 #cabecera{
     width: 95%;
     height: 70px;
@@ -43,7 +45,7 @@
 .naranja{
     background-color: transparent;
     color: #000000;
-    padding: 3px 10px;
+    padding: 18px 10px;
     font-size: 18px;
     text-align: center;
 }
@@ -56,6 +58,38 @@
     background-color: #fcb478;
     cursor: pointer;
 }
+
+.actual{
+    border-bottom: #ff7300 5px solid;
+    color: #ff7300;
+    font-weight: bold;
+    padding: 1px;
+}
+
+.inicio_sesion{
+    background-color: #ff7300;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.inicio_sesion a{
+    text-decoration: none;
+    color: white;
+}
+
+.inicio_sesion:hover{
+    background-color: #ffa65d;
+    color: white;
+    cursor: pointer;
+}
+
+.inicio_sesion:active{
+    background-color: #fac294;
+}
+
 .hamburguesa{
     display: none;
     font-size: 30px;
@@ -86,6 +120,13 @@
     #contenedor{
         margin-top: 100px;
         margin-inline: 20px;
+    }
+
+    .hamburguesa:hover{
+        color: #ffac75;
+    }
+    .hamburguesa:active{
+        color: #ffcea7;
     }
 }
 
@@ -503,12 +544,6 @@
     padding: 5px 10px;
 }
 
-.actual{
-    border-bottom: #ff7300 2px solid;
-    color: #ff7300;
-    font-weight: bold;
-}
-
 /*FORMULARIO DE RESERVA Y PEDIDOS*/
 #formulario{
     display: flex;
@@ -671,7 +706,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
     background-color: #f2f2f2;
     display: flex;
     align-items: center;
@@ -834,7 +868,7 @@
     overflow: hidden;
     transition: transform 0.6s ease-in-out;
     border-radius: 150px 0 0 100px;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .contenedor.active .toggle-container{
